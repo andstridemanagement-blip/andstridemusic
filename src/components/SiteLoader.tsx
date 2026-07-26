@@ -42,6 +42,7 @@ export default function SiteLoader({
         <p
           className="
             loader-logo
+            translate-x-[0.28em]
             text-xl
             font-black
             uppercase
@@ -53,13 +54,14 @@ export default function SiteLoader({
           Andstride
         </p>
 
-        <div className="mt-5 h-px w-56 overflow-hidden bg-white/10">
+        <div className="mt-5 h-px w-52 overflow-hidden bg-white/10">
           <div className="loader-progress h-full bg-white" />
         </div>
 
         <p
           className="
             mt-4
+            translate-x-[0.23em]
             font-mono
             text-[8px]
             uppercase
