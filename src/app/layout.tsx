@@ -18,26 +18,33 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 
   applicationName: "Andstride",
+
   icons: {
-  icon: [
-    {
-      url: "/favicon.ico",
-      sizes: "any",
-    },
-    {
-      url: "/favicon-32x32.png",
-      type: "image/png",
-      sizes: "32x32",
-    },
-  ],
-  apple: [
-    {
-      url: "/apple-touch-icon.png",
-      sizes: "180x180",
-      type: "image/png",
-    },
-  ],
-},
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+      {
+        url: "/favicon-16x16.png",
+        type: "image/png",
+        sizes: "16x16",
+      },
+      {
+        url: "/favicon-32x32.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
+    ],
+
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+  },
 
   keywords: [
     "Andstride",
@@ -85,6 +92,7 @@ export const metadata: Metadata = {
     siteName: "Andstride",
     title: siteConfig.title,
     description: siteConfig.description,
+
     images: [
       {
         url: "/og-image.png",
@@ -119,16 +127,21 @@ const jsonLd = {
   name: "Andstride",
   url: siteConfig.url,
   description: siteConfig.description,
+
   sameAs: [
     siteConfig.socials.instagram,
     siteConfig.socials.youtube,
     siteConfig.socials.soundcloud,
   ],
+
   contactPoint: {
     "@type": "ContactPoint",
     email: siteConfig.email,
     contactType: "business inquiries",
-    availableLanguage: ["English", "Russian"],
+    availableLanguage: [
+      "English",
+      "Russian",
+    ],
   },
 };
 

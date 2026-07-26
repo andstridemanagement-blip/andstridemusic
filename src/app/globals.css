@@ -80,7 +80,6 @@ body::before {
   z-index: 998;
   pointer-events: none;
   opacity: .022;
-  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   animation: grain 8s steps(10) infinite;
 }
 
