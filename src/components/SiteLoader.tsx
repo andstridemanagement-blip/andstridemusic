@@ -60,7 +60,7 @@ export default function SiteLoader({
 
         <p
           className="
-            mt-4
+            mt-3
             translate-x-[0.23em]
             font-mono
             text-[8px]
