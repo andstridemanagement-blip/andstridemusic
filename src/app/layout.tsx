@@ -18,6 +18,26 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 
   applicationName: "Andstride",
+  icons: {
+  icon: [
+    {
+      url: "/favicon.ico",
+      sizes: "any",
+    },
+    {
+      url: "/favicon-32x32.png",
+      type: "image/png",
+      sizes: "32x32",
+    },
+  ],
+  apple: [
+    {
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
+  ],
+},
 
   keywords: [
     "Andstride",
@@ -67,7 +87,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Andstride — Beats & Instrumentals",
@@ -79,7 +99,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: ["/opengraph-image"],
+    images: ["/og-image.png"],
   },
 
   category: "music",
