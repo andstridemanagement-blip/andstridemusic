@@ -13,6 +13,7 @@ export type Track = {
   duration: number;
   downloadName: string;
   accent: string;
+  beatstarsUrl?: string;
 };
 
 export const tracks: Track[] = [
@@ -31,6 +32,7 @@ export const tracks: Track[] = [
     duration: 54,
     downloadName: "andstride-midnight-preview.mp3",
     accent: "#58a6ff",
+    beatstarsUrl: "https://bsta.rs/Pl19b",
   },
   {
     slug: "lost-signal",
@@ -63,5 +65,6 @@ export const tracks: Track[] = [
     duration: 54,
     downloadName: "andstride-overload-preview.mp3",
     accent: "#ff6a6a",
+    beatstarsUrl: "https://bsta.rs/eewBy",
   },
 ];

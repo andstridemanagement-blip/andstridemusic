@@ -546,9 +546,19 @@ const [selectedWorkOpen, setSelectedWorkOpen] =
         playing={playing}
         parallaxX={parallax.x}
         parallaxY={parallax.y}
-        onBuy={() =>
-          setLicenseOpen(true)
-        }
+        onBuy={() => {
+  if (currentTrack.availability !== "available") {
+    setLicenseOpen(true);
+    return;
+  }
+
+  if (currentTrack.beatstarsUrl) {
+    window.open(currentTrack.beatstarsUrl, "_blank", "noopener,noreferrer");
+    return;
+  }
+
+  alert("BeatStars link has not been added yet.");
+}}
         onEnded={nextTrack}
         onListen={recordListen}
         onPlayingChange={setPlaying}
