@@ -8,6 +8,7 @@ export default function VideoBackground({
   return (
     <div className="absolute inset-0 overflow-hidden">
       <video
+  key={src}
         autoPlay
         loop
         muted
