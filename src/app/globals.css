@@ -126,7 +126,7 @@ body::before {
 
 .loader-progress {
   width: 0;
-  animation: loaderProgress 1s ease forwards;
+  animation: loaderProgress 650ms ease forwards;
 }
 
 @keyframes loaderLogo {

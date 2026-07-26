@@ -38,11 +38,10 @@ export default function SiteLoader({
           : "scale-100 opacity-100 blur-0"
       }`}
     >
-      <div className="flex translate-y-2 flex-col items-center text-center">
+      <div className="flex flex-col items-center text-center">
         <p
           className="
             loader-logo
-            translate-x-[0.28em]
             text-xl
             font-black
             uppercase
@@ -54,18 +53,17 @@ export default function SiteLoader({
           Andstride
         </p>
 
-        <div className="mt-7 h-px w-60 overflow-hidden bg-white/10">
+        <div className="mt-5 h-px w-56 overflow-hidden bg-white/10">
           <div className="loader-progress h-full bg-white" />
         </div>
 
         <p
           className="
-            mt-5
-            translate-x-[0.18em]
+            mt-4
             font-mono
             text-[8px]
             uppercase
-            tracking-[0.38em]
+            tracking-[0.46em]
             text-white/30
           "
         >
