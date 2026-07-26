@@ -42,6 +42,18 @@ const PRODUCTIONS_SOURCE: Production[] = [
       "https://open.spotify.com/track/1Ss2e4hKtcIvLBb8hNHhrq?si=ccbed0f148794c5c",
   },
   {
+  id: "paikesekuu",
+  title: "Päikesekuu",
+  artists: "Starboy Bob & AG",
+  year: "2022",
+  sortDate: "2022-09-23",
+  role: "Produced by Andstride",
+  status: "Released",
+  image: "/credits/paikesekuu.jpg",
+  spotify:
+    "https://open.spotify.com/track/749I9kg1V259fmHmRrXQrK?si=87ff1f566ada4987",
+},
+  {
     id: "i-dont-dance",
     title: "I Don’t Dance",
     artists: "VeeAlwaysHere × Ted Park",
