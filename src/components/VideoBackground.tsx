@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 type VideoBackgroundProps = {
   src: string;
 };
@@ -9,24 +5,16 @@ type VideoBackgroundProps = {
 export default function VideoBackground({
   src,
 }: VideoBackgroundProps) {
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    setReady(false);
-  }, [src]);
-
   return (
     <div className="absolute inset-0 overflow-hidden bg-black">
       <video
         key={src}
-        src={src}
         autoPlay
         loop
         muted
         playsInline
-        preload="metadata"
-        onCanPlay={() => setReady(true)}
-        className={`
+        preload="auto"
+        className="
           absolute
           inset-0
           h-full
@@ -36,11 +24,10 @@ export default function VideoBackground({
           contrast-125
           saturate-[1.08]
           animate-[slowZoom_18s_linear_infinite_alternate]
-          transition-opacity
-          duration-500
-          ${ready ? "opacity-100" : "opacity-0"}
-        `}
-      />
+        "
+      >
+        <source src={src} type="video/mp4" />
+      </video>
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/55" />
 
