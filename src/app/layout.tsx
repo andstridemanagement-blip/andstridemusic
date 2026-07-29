@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type {
   Metadata,
   Viewport,
@@ -20,31 +21,31 @@ export const metadata: Metadata = {
   applicationName: "Andstride",
 
   icons: {
-    icon: [
-      {
-        url: "/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "/favicon-16x16.png",
-        type: "image/png",
-        sizes: "16x16",
-      },
-      {
-        url: "/favicon-32x32.png",
-        type: "image/png",
-        sizes: "32x32",
-      },
-    ],
-
-    apple: [
-      {
-        url: "/apple-touch-icon.png",
-        sizes: "180x180",
-        type: "image/png",
-      },
-    ],
-  },
+  icon: [
+    {
+      url: "/favicon.ico",
+      sizes: "any",
+    },
+    {
+      url: "/favicon-32x32.png",
+      type: "image/png",
+      sizes: "32x32",
+    },
+    {
+      url: "/favicon-96x96.png",
+      type: "image/png",
+      sizes: "96x96",
+    },
+  ],
+  shortcut: "/favicon.ico",
+  apple: [
+    {
+      url: "/apple-touch-icon.png",
+      type: "image/png",
+      sizes: "180x180",
+    },
+  ],
+},
 
   keywords: [
     "Andstride",
@@ -164,6 +165,8 @@ export default function RootLayout({
             ),
           }}
         />
+        
+        <GoogleAnalytics gaId="G-K8MSD0R1S3" />
       </body>
     </html>
   );
