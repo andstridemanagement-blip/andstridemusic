@@ -19,6 +19,16 @@
   "images": {
     "binding": "IMAGES"
   },
+  "routes": [
+    {
+      "pattern": "andstridemusic.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.andstridemusic.com",
+      "custom_domain": true
+    }
+  ],
   "observability": {
     "enabled": true
   }
