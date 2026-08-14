@@ -381,7 +381,7 @@ export default function AudioPlayer({
       <audio
         ref={audioRef}
         src={src}
-        preload="metadata"
+        preload="auto"
         onLoadedMetadata={handleAudioReady}
         onLoadedData={handleAudioReady}
         onCanPlay={handleAudioReady}
